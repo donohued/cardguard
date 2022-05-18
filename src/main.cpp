@@ -2,6 +2,7 @@
 #include <time.h>
 
 #include "war.h"
+#include "board.h"
 
 int main(int argc, char **argv)
 {
@@ -11,9 +12,13 @@ int main(int argc, char **argv)
     Deck deck;
     deck.shuffle();
     
-    War game;
+    Board board(15);
+    std::cout << "yes :)" << std::endl;
+    board.print();
 
-    game.Play(deck);
+
+    //War game;
+    //game.Play(deck);
 
     return 1;
 }

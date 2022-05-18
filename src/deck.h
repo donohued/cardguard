@@ -1,3 +1,6 @@
+#ifndef DECK_H
+#define DECK_H
+
 #include <vector>
 #include <stack>
 
@@ -18,3 +21,5 @@ class Deck{
         std::vector<Card*> deck;
         std::stack<Card*> shuffled;
 };
+
+#endif
